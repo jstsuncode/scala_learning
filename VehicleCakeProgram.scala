@@ -110,9 +110,9 @@ object TeslaDealershipRegistry extends ElectricEngineComponentImpl
 object VehicleCakeProgram {
     def main(args: Array[String]) {
 
-        // You can replace registry objects at will.  For example
         val x = 30
 
+        // You can replace registry objects at will.  For example I have 3 in this case
         println(FordDealershipRegistry.shop.name)
         val v1 = FordDealershipRegistry.vehicle 
         v1.start
