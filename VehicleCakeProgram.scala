@@ -54,7 +54,7 @@ trait VehicleComponentImpl {
 
     class Vehicle {
         def start = {
-            println("Attempting to start the vehicle...")
+            println("  Attempting to start the vehicle...")
             engine.on
             println("  using " + engine.energy_source)
         }
@@ -116,19 +116,19 @@ object VehicleCakeProgram {
         println(FordDealershipRegistry.shop.name)
         val v1 = FordDealershipRegistry.vehicle 
         v1.start
-        println("Miles driven in %d minutes is %d".format(x, v1.milesDriven(x)))
+        println("  Miles driven in %d minutes is %d".format(x, v1.milesDriven(x)))
         println()
 
         println(TeslaDealershipRegistry.shop.name)
         val v2 = TeslaDealershipRegistry.vehicle
         v2.start
-        println("Miles driven in %d minutes is %d".format(x, v2.milesDriven(x)))
+        println("  Miles driven in %d minutes is %d".format(x, v2.milesDriven(x)))
         println()
 
         println(BikeStoreRegistry.shop.name)
         val v3 = BikeStoreRegistry.vehicle
         v3.start
-        println("Miles driven in %d minutes is %d".format(x, v3.milesDriven(x)))
+        println("  Miles driven in %d minutes is %d".format(x, v3.milesDriven(x)))
         println()
     }
 }
